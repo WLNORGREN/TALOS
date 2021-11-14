@@ -25,7 +25,7 @@ except ImportError:
     
 #This function displays the function to be graphed in a Latex format to a matplotlib canvas
 def graph(value=None):
-    tmptext = "x(t) =  0.5" + str(s2.get()) + "t^2"
+    tmptext = "x(t) =  0.5(" + str(s1.get()) + ")t^2"
     tmptext = "$"+tmptext+"$"
     t = sp.symbols('t')
     ax.clear()
@@ -62,7 +62,7 @@ def plot(value=None):
     
 def function(a):
     a = sp.symbols(str(a))
-    return 0.5*int(s2.get())*a**2
+    return 0.5*int(s1.get())*a**2
     
 def vel(a):
     return sp.diff(function(a),a)
@@ -88,9 +88,6 @@ s1.grid(column=0,row=1)
 
 
 
-s2 = tk.Scale( root, 
-           from_ = 1, to = 100,orient =tk.HORIZONTAL,command=lambda x:(plot(),graph())) 
-s2.grid(column=0,row=2)
 
 
 quitButton = tk.Button(root, text = "Quit", command = root.destroy)
