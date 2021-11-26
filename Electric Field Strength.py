@@ -70,11 +70,7 @@ def function(a):
     a = sp.symbols(str(a))
     return (1/(4*scp.constants.pi*scp.constants.epsilon_0))*int(s1.get())/(a**2)
     
-def vel(a):
-    return sp.diff(function(a),a)
-    
-def acc(a):
-    return sp.diff(vel(a),a)
+
 def lam(a,b):
     lam_x = sp.lambdify(a, b,'numpy')
     return lam_x
@@ -90,13 +86,13 @@ root = tk.Tk()
 
 s1 = tk.Scale( root, 
            from_ = 1, to = 100,orient=tk.HORIZONTAL,command= lambda x:(plot(),graph())) 
-s1.grid(column=0,row=1)
+s1.grid(column=1,row=1)
 
 
 
 s2 = tk.Scale( root, 
            from_ = 1, to = 100,orient =tk.HORIZONTAL,command=lambda x:(plot(),graph())) 
-s2.grid(column=0,row=2)
+s2.grid(column=1,row=2)
 
 
 quitButton = tk.Button(root, text = "Quit", command = root.destroy)

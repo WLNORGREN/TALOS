@@ -69,11 +69,7 @@ def function(a):
     a = sp.symbols(str(a))
     return scp.constants.G*int(s1.get())/(a**2)
     
-def vel(a):
-    return sp.diff(function(a),a)
-    
-def acc(a):
-    return sp.diff(vel(a),a)
+
 def lam(a,b):
     lam_x = sp.lambdify(a, b,'numpy')
     return lam_x

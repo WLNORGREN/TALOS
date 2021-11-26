@@ -25,14 +25,14 @@ except ImportError:
     
 #This function displays the function to be graphed in a Latex format to a matplotlib canvas
 def graph(value=None):
-    tmptext = "x(t) =  0.5(" + str(s1.get()) + ")t^2"
-    tmptext = "$"+tmptext+"$"
+    tmptext = "x(t) =  0.5(" + str(s1.get()) + ")t^2  "
+    tmptext = "Position: $"+tmptext+"$ ${m}$"
     t = sp.symbols('t')
     ax.clear()
     ax.text(0.2, 0.6, tmptext, fontsize=10) 
     
-    ax.text(0.2, 0.4, "v(t) = $" + sp.latex(vel(t)) + "$", fontsize=10) 
-    ax.text(0.2, 0.2,"a(t) = $" + sp.latex(acc(t))+ "$", fontsize=10) 
+    ax.text(0.2, 0.4, "Velocity: v(t) = $" + sp.latex(vel(t)) + "$ $\\frac{m}{s}$" , fontsize=10) 
+    ax.text(0.2, 0.2,"Acceleration: a(t) = $" + sp.latex(acc(t))+ "$ $\\frac{m}{s^2}$", fontsize=10) 
     canvas.draw()
     print("Test Phrase")
     
