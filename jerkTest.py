@@ -105,13 +105,13 @@ root = tk.Tk()
 #Coefficient entry
 
 s1 = tk.Scale( root, 
-           from_ = 0.1, to = 10,digits = 3, resolution = 0.1, orient=tk.HORIZONTAL,command= lambda x:(plot(),graph())) 
+           from_ = 0.1, to = 10,digits = 3,length = 300, resolution = 0.1, orient=tk.HORIZONTAL,command= lambda x:(plot(),graph())) 
 s1.grid(column=0,row=1)
 
 
 
 s2 = tk.Scale( root, 
-           from_ = 0.1, to = 10,digits = 3, resolution = 0.1,orient =tk.HORIZONTAL,command=lambda x:(plot(),graph())) 
+           from_ = 0.1, to = 10,digits = 3, length = 300,resolution = 0.1,orient =tk.HORIZONTAL,command=lambda x:(plot(),graph())) 
 s2.grid(column=0,row=2)
 
 

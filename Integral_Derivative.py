@@ -30,7 +30,7 @@ except ImportError:
     
 #This function displays the function to be graphed in a Latex format to a matplotlib canvas
 def graph(value=None):
-    tmptext = "This function shows \nthe integral and derivative of\n a user specified single term \npolynomial function"
+    tmptext = "This graph shows \nthe integral and derivative of\n a user specified single term \npolynomial function"
     
     t = sp.symbols('t')
     ax.clear()
@@ -89,13 +89,13 @@ root = tk.Tk()
 #Coefficient entry
 
 s1 = tk.Scale( root, 
-           from_ = 0.1, to = 10,digits = 3, resolution = 0.1, orient=tk.HORIZONTAL,command= lambda x:(plot(),graph())) 
+           from_ = 0.1, to = 10,digits = 3, resolution = 0.1,length = 300, orient=tk.HORIZONTAL,command= lambda x:(plot(),graph())) 
 s1.grid(column=0,row=1)
 
 
 
 s2 = tk.Scale( root, 
-           from_ = 0.1, to = 10,digits = 3, resolution = 0.1,orient =tk.HORIZONTAL,command=lambda x:(plot(),graph())) 
+           from_ = 0.1, to = 10,digits = 3, resolution = 0.1,length = 300,orient =tk.HORIZONTAL,command=lambda x:(plot(),graph())) 
 s2.grid(column=0,row=2)
 
 
