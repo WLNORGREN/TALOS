@@ -102,7 +102,7 @@ def lam(a,b):
 root = tk.Tk()
 
 
-#Coefficient entry
+#Scales for coefficients
 
 s1 = tk.Scale( root, 
            from_ = 0.1, to = 10,digits = 3,length = 300, resolution = 0.1, orient=tk.HORIZONTAL,command= lambda x:(plot(),graph())) 
@@ -142,7 +142,12 @@ canvas2.get_tk_widget().grid(column=2,row=2)
 
 ax.get_xaxis().set_visible(False)
 ax.get_yaxis().set_visible(False)
+#Toolbar
+toolbarFrame = Frame(master=root)
+toolbarFrame.grid(column=2,row=3)
+toolbar = NavigationToolbar2TkAgg(canvas2, toolbarFrame)
 
+#Update UI
 
 
 graph()
