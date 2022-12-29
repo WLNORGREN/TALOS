@@ -1,2 +1,2 @@
-# Norgrens-playground
-This will house a growing collection of data driven physics, math and cybersecurity simulations!
+# ASTRONOMY DATASETS
+  These datasets are used in many of the machine learning examples in this repository.  They serve to illustrate physical phenomena, as well as provide a medium in which to demonstrate many machine learning techniques.  Planetary, stellar, as well as galactic data can be found within them.  While some of these datasets are quite small, numbering only a few hundred entries, others, such as the exoplanet set and the Sloan Digital Sky survey contain many thousands of records.  Therefore, do not be suprised if certain PANDAS operations take a long time when using the larger datasets.
