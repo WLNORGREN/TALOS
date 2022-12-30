@@ -1,2 +1,1 @@
-# TALOS
-This will house a growing collection of data driven physics, math and cybersecurity simulations!
+TALOS houses a growing collection of data driven physics, math and cybersecurity simulations!
