@@ -1,1 +1,1 @@
-TALOS houses a growing collection of data driven physics, math and cybersecurity simulations!
+This repository contains the sourcecode for the BiblioCortex main page!
