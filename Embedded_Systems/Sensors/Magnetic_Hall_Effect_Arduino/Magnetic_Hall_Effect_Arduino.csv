@@ -1,0 +1,7 @@
+"Source:","/home/wln/Documents/Circuits/Test_Project/Test_Project.kicad_sch"
+"Date:","Fri 01 Mar 2024 06:07:16 PM EST"
+"Tool:","Eeschema 7.0.1"
+"Generator:","/app/share/kicad/plugins/bom_csv_grouped_by_value_with_fp.py"
+"Component Count:","1"
+"Ref","Qnty","Value","Cmp name","Footprint","Description","Vendor","DNP"
+"A1","1","Arduino_UNO_R3","Arduino_UNO_R3","Module:Arduino_UNO_R3","Arduino UNO Microcontroller Module, release 3","",""
